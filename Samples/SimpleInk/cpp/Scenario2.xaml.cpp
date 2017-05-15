@@ -42,7 +42,7 @@ InkDrawingAttributes^ CalligraphicPen::CreateInkDrawingAttributesCore(Brush^ bru
     }
 
     inkDrawingAttributes->Size = Size((float)strokeWidth, 2.0f * (float)strokeWidth);
-    inkDrawingAttributes->PenTipTransform = make_float3x2_rotation((float)((M_PI * 45.0) / 180.0), float2::zero());
+    inkDrawingAttributes->PenTipTransform = make_float3x2_rotation((float)((M_PI * 45.0) / 180.0));
 
     return inkDrawingAttributes;
 }
@@ -50,7 +50,6 @@ InkDrawingAttributes^ CalligraphicPen::CreateInkDrawingAttributesCore(Brush^ bru
 Scenario2::Scenario2()
 {
     InitializeComponent();
-    CalligraphyPen = (Symbol)0xEDFB;
     LassoSelect = (Symbol)0xEF20;
     TouchWriting = (Symbol)0xED5F;
 
