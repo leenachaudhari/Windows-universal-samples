@@ -104,6 +104,11 @@ namespace SDKTemplate
             UpdateUI();
         }
 
+        private void DemoPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DemoPage));
+        }
+
         /// <summary>
         /// Attach progress and completed handers to a background task.
         /// </summary>

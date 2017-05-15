@@ -102,6 +102,9 @@
     <Compile Include="..\..\..\..\SharedContent\cs\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="DemoPage.xaml.cs">
+      <DependentUpon>DemoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SampleConfiguration.cs" />
     <Compile Include="Scenario1_SampleBackgroundTask.xaml.cs">
       <DependentUpon>Scenario1_SampleBackgroundTask.xaml</DependentUpon>
@@ -168,6 +171,10 @@
       <Link>Styles\Styles.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DemoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

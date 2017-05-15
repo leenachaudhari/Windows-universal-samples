@@ -72,6 +72,11 @@ namespace BackgroundTransfer
             SetSubstatus("Completion group enabled.");
         }
 
+        private void NextPageButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DemoBackgroundTransferPage));
+        }
+
         private async Task<IStorageFile> CreateResultFileAsync(int id)
         {
             IStorageFile resultFile = await KnownFolders.PicturesLibrary.CreateFileAsync(

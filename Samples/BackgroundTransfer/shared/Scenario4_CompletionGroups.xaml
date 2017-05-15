@@ -26,6 +26,7 @@
         <TextBlock Text="Remote address: " Style="{StaticResource BasicTextStyle}" Margin="0,8,10,0"/>
         <TextBox x:Name="serverAddressField" InputScope="Url" Text="http://localhost/BackgroundTransferSample/bitmap.aspx" />
         <Button x:Name="StartDownloadsButton" Content="Start ten downloads in a completion group" Margin="0,10,0,10" Click="StartDownloadsButton_Click"/>
+        <Button x:Name="NextPage" Content="Next Page" Margin="0,10,0,10" Click="NextPageButton_Click"/>
         <TextBlock x:Name="SubstatusBlock" />
     </StackPanel>
 </Page>

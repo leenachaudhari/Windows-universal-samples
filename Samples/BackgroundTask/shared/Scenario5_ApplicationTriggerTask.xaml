@@ -31,6 +31,7 @@
                         <Button x:Name="RegisterButton" Content="Register" Click="RegisterBackgroundTask"/>
                         <Button x:Name="UnregisterButton" Content="Unregister" Click="UnregisterBackgroundTask" Margin="10,0,10,0"/>
                         <Button x:Name="SignalButton" Content="Signal" Click="SignalBackgroundTask"/>
+                        <Button x:Name="DemoButton" Content="Demo Page" Click="DemoPageButton_Click"/>
                     </StackPanel>
                     <StackPanel>
                         <TextBlock x:Name="Status" Style="{StaticResource BasicTextStyle}" Text="Unregistered"/>
